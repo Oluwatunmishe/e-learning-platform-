@@ -3,5 +3,10 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",   // or "react-jsxdev" / "preserve" depending on setup
+    "allowJs": true,      // allows .js and .jsx files alongside TypeScript
+    "checkJs": false      // if true, TypeScript will type-check .js/.jsx files too
+  }
 }
